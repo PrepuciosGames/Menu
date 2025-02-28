@@ -1,6 +1,7 @@
 :root {
     --color_primario: #057914fd;
-    --color_primario_suave: #bbff835e;
+    --color_primario_suave: #0000005e;
+    --color_usando: #0000ff;
     --color_blanco: #fff;
     --altura_header: 80px;
     --padding_left_right: 2rem;
@@ -12,6 +13,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    cursor: url(default.png), auto;
 
 }
 
@@ -26,7 +28,8 @@ body{
 }
 
 a {
-
+    
+    cursor: url(hand.png), auto;
     text-decoration: none;
 
 }
@@ -68,13 +71,17 @@ ol, ul {
 }
 
 .Logo {
+
+    margin-top: 20px;
     color: var(--color_blanco);
+
 }
 .label_hamburguesa {
 }
 .list_icon {
     color: var(--color_blanco);
     cursor: pointer;
+    margin-top: 20px;
 }
 .ul_links {
 
@@ -96,16 +103,20 @@ ol, ul {
 }
 .li_links {
 }
+
+.links0{
+    
+    font-size: 3.5em;
+    font-weight: bold;
+    color: var(--color_usando);
+
+}
+
+
 .links{
 
     font-size: 3.5em;
     color: var(--color_blanco);
     font-weight: bold;
-
-}
-
-@media (min-widht: 768px;) {
-
-
 
 }
