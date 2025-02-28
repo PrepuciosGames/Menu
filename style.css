@@ -1,0 +1,111 @@
+:root {
+    --color_primario: #057914fd;
+    --color_primario_suave: #bbff835e;
+    --color_blanco: #fff;
+    --altura_header: 80px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    background-image: url(Imagenes/background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+ol, ul {
+
+    list-style: none;
+
+}
+
+.header {
+
+    height: var(--altura_header);
+    background-color: var(--color_primario);
+
+}
+
+.navbar {
+
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 var(--padding_left_right);
+    
+}
+
+.menu_hamburguesa {
+
+    display: none;
+
+}
+.menu_hamburguesa:checked +.ul_links {
+
+    height: calc(100vh - var(--altura_header)); 
+
+}
+
+.Logo {
+    color: var(--color_blanco);
+}
+.label_hamburguesa {
+}
+.list_icon {
+    color: var(--color_blanco);
+    cursor: pointer;
+}
+.ul_links {
+
+    width: 100%;
+    background-color: var(--color_primario_suave);
+    position: absolute;
+    top: var(--altura_header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    /* height: calc(100vh - var(--altura_header)); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+
+    transition: all .5s;
+}
+.li_links {
+}
+.links{
+
+    font-size: 3.5em;
+    color: var(--color_blanco);
+    font-weight: bold;
+
+}
+
+@media (min-widht: 768px;) {
+
+
+
+}
